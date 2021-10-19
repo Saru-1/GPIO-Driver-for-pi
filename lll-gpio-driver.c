@@ -9,7 +9,8 @@
 
 #define LLL_MAX_USER_SIZE 1024
 
-#define BCM2837_GPIO_ADDRESS 0xfe200000
+#define BCM2711_GPIO_ADDRESS 0xfe200000
+#define BCM2837_GPIO_ADDRESS 0x3f200000
 
 static struct proc_dir_entry *lll_proc = NULL;
 
@@ -78,7 +79,7 @@ static const struct proc_ops lll_proc_fops=
 static int __init gpio_driver_init(void)
 {
 	printk("Welcome to my driver!\n");
-	gpio_registers = (int*)ioremap(BCM2837_GPIO_ADDRESS,PAGE_SIZE);
+	gpio_registers = (int*)ioremap(BCM2711_GPIO_ADDRESS,PAGE_SIZE);
 	if(gpio_registers == NULL)
 	{
 		printk("Failed to map GPIO memory to driver\n");

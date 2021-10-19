@@ -9,5 +9,8 @@
 	lsmod | grep lll
 6.Alternative checking is by
 	dmesg
-7.Removing driver
+7.You can change status by the cmd:
+	echo "21,1" > /proc/lll-gpio
+8.Removing driver
 	rmmod lll-gpio-driver
+
