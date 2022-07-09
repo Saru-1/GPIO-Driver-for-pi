@@ -1,5 +1,5 @@
 1.create a linux build for raspberry pi
-	sudo apt intall raspberrypi-kernel-headers
+	sudo apt install raspberrypi-kernel-headers
 2.Ckeck if kernel build is present
 	ls /lib/modules/$(uname -r)/build
 3.Make
