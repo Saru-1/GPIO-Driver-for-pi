@@ -12,6 +12,6 @@
 7.You can change status by the cmd:
 	echo "21,1" > /proc/lll-gpio
 8.Connect pin 21 to led to see the result.
-8.Removing driver
+9.Removing driver
 	rmmod lll-gpio-driver
 
